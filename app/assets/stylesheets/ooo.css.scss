@@ -1,2 +1,48 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+.
+.
+.
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
